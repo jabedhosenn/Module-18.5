@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% load crispy_forms_tags %} {% block content %}
+
+<div class="border p-5">
+  <div class="text-center">
+    <h3>This is your profile</h3>
+    <p>Welcome, {{ user.username }}!</p>
+  </div>
+</div>
+<div class="mt-5">
+  <a class="btn btn-primary" href="{% url 'edit_profile' %}">
+    Edit Your Profile</a>
+</div>
+
+{% endblock %}
